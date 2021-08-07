@@ -309,7 +309,8 @@ body {
 
 .contact {
     background-color: #F5E4D9;
-    height: 50vh;
+    min-height: 50vh;
+    height: fit-content;
     margin-top: -0.1rem;
     display: flex;
     align-items: center;
@@ -324,6 +325,7 @@ body {
     border-radius: 1rem;
     text-align: center;
     transition: 0.3s;
+    margin: 0.5rem;
 }
 .contact .image img {
     width: 30px;
@@ -338,7 +340,10 @@ body {
     background-color: #F5E4D9;
     color: #2d2d2d;
     font-weight: 700;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: fit-content;
 }
 .contact .wrap {
     background-color: #8CB07B;
@@ -347,13 +352,22 @@ body {
     width: fit-content;
     margin-left: auto;
     transition: 0.3s;
+    width: 75px;
+    text-align: center;
 }
 .contact .bottom a {
     text-decoration: none;
     color: #2d2d2d;
+    width: fit-content;
+    font-size: 80%;
 }
 .contact .bottom a:hover .wrap {
     background-color: #2d2d2d;
     color: #F5E4D9;
     transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+    .contact .image {
+        width: 100%;
+    }
 }
