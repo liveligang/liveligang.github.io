@@ -69,8 +69,7 @@ body {
 .hero .black-box {
     border: 2px black solid;
     border-radius: 2rem;
-    min-height: 80vh;
-    height: fit-content;
+    height: 80vh;
     padding: 1rem 1rem 3rem 1rem;
 }
 .hero .real-hero {
@@ -119,9 +118,20 @@ body {
     border-radius: 1rem;
 }
 
+@media screen and (max-width: 1200px) {
+    .hero .black-box {
+        height: 70vh;
+    }
+}
 @media screen and (max-width: 992px) {
     .hero .image {
         display: none;
+    }
+    .hero .black-box {
+        height: 60vh;
+    }
+    .hero .real-hero {
+        margin-top: 6rem;
     }
 }
 @media screen and (max-width: 576px) {
@@ -130,6 +140,25 @@ body {
     }
     .hero .wrap-header .dropdown {
         display: block;
+    }
+}
+@media screen and (max-width: 450px) {
+    .hero .real-hero {
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .hero .text .heading {
+        font-size: 10vw;
+    }
+    .hero .text .deskripsi {
+        font-size: 3vw;
+    }
+    .hero .text a span {
+        font-size: 3vw;
+    }
+    .hero .real-hero {
+        margin-top: 6rem;
     }
 }
 

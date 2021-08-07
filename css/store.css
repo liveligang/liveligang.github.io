@@ -105,7 +105,6 @@ header .wrap-header .dropdown ul li a {
 }
 .product .deskripsi {
     font-weight: 700;
-    font-size: 1.5rem;
     width: 40vw;
     background-color: inherit;
     border: #F5E4D9 4px solid;
@@ -129,6 +128,11 @@ header .wrap-header .dropdown ul li a {
     margin-top: 2rem;
     margin-left: 0.5rem;
 }
+@media screen and (max-width: 991px) {
+    .product .deskripsi {
+        width: 50vw;
+    }
+}
 @media screen and (max-width: 768px) {
     .product .judul {
         font-size: 2rem;
@@ -136,9 +140,26 @@ header .wrap-header .dropdown ul li a {
     .product .image img {
         border-radius: 1rem;
     }
+    .product .deskripsi {
+        width: 80vw;
+    }
 }
 @media screen and (max-width: 576px) {
     .product .image {
         margin-top: 1rem;
+    }
+    .product .deskripsi {
+        font-size: 3vw;
+    }
+    .product a span {
+        font-size: 3vw;
+    }
+    .product .judul {
+        font-size: 6vw;
+    }
+}
+@media screen and (max-width: 330px){
+    .product .deskripsi {
+        font-size: 2.5vw;
     }
 }
