@@ -115,12 +115,6 @@ header .wrap-header .dropdown ul li a {
     color: #F5E4D9;
 }
 @media screen and (max-width: 991px) {
-    .contact .col {
-        width: fit-content;
-    }
-    .contact .image {
-        width: fit-content;
-    }
     .contact .image .text {
         font-size: 1rem;
     }
